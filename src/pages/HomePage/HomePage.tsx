@@ -1,7 +1,8 @@
 import React from "react";
+import AuthenticatedHomePage from "../AuthenticatedHomePage";
 
 const HomePage = () => {
-    return <div>HomePage</div>;
+    return <AuthenticatedHomePage />;
 };
 
 export default HomePage;
