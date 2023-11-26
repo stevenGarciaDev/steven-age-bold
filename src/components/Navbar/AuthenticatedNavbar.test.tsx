@@ -1,17 +1,24 @@
 import { BrowserRouter } from "react-router-dom";
 import AuthenticatedNavbar from "./AuthenticatedNavbar";
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import { useRef } from "react";
 
 describe("AuthenticatedNavbar", () => {
-    test("renders navbar items", () => {
+    test("renders navbar with correct links", () => {
         render(
             <BrowserRouter>
                 <AuthenticatedNavbar />
             </BrowserRouter>
         );
 
-        expect(screen.getByText("Home")).toBeInTheDocument();
+        const homeLink = screen.getByText("Home");
+        const programLink = screen.getByText("Program");
+        const liveClassesLink = screen.getByText("Live classes");
+        const exploreLink = screen.getByText("Explore");
+
+        expect(homeLink).toBeInTheDocument();
+        expect(programLink).toBeInTheDocument();
+        expect(liveClassesLink).toBeInTheDocument();
+        expect(exploreLink).toBeInTheDocument();
     });
 });

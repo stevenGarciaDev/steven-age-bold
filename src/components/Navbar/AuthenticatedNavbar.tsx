@@ -53,7 +53,6 @@ const AuthenticatedNavbar = () => {
                     <li key={item.name}>
                         <NavLink
                             to={item.path}
-                            activeClassName="bg-purple-background text-purple-primary"
                             className={({ isActive }: { isActive: boolean }) =>
                                 `rounded-md p-3 flex flex-row items-center space-x-2 hover:bg-purple-background hover:text-purple-primary ${
                                     isActive
@@ -89,16 +88,24 @@ const AuthenticatedNavbar = () => {
                 {profileDropdown && (
                     <div className="absolute top-10 -left-6 bg-white z-20">
                         <div className="border-2 border-b-0 border-slate-300 w-32 py-1 text-center">
-                            <Link
-                                to="/profile"
+                            <a
+                                href="https://github.com/stevenGarciaDev"
+                                target="_blank"
                                 onClick={() => setProfileDropdown(false)}
                                 className="block w-full"
                             >
                                 Profile
-                            </Link>
+                            </a>
                         </div>
                         <div className="border-2 border-slate-300 w-32 py-1 text-center">
-                            Logout
+                            <a
+                                href="https://stevencodecraft.com/"
+                                target="_blank"
+                                onClick={() => setProfileDropdown(false)}
+                                className="block w-full"
+                            >
+                                Logout
+                            </a>
                         </div>
                     </div>
                 )}
@@ -131,6 +138,24 @@ const AuthenticatedNavbar = () => {
                                 </Link>
                             </li>
                         ))}
+                        <li className="border-b-2">
+                            <Link
+                                to="https://github.com/stevenGarciaDev"
+                                className="w-full block text-center py-2"
+                                target="_blank"
+                            >
+                                GitHub Profile
+                            </Link>
+                        </li>
+                        <li className="border-b-2">
+                            <Link
+                                to="https://stevencodecraft.com/"
+                                className="w-full block text-center py-2"
+                                target="_blank"
+                            >
+                                Personal Website
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             )}
