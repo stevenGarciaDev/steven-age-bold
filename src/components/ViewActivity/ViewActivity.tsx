@@ -67,7 +67,7 @@ const ViewActivity = () => {
     ];
 
     return (
-        <div className="border-2 border-gray-200 p-6 rounded-md bg-white">
+        <div className="border-2 border-gray-200 p-2 sm:p-6 rounded-md bg-white">
             <div className="flex flex-row justify-between">
                 <h2 className="text-xl font-semibold mb-3">My activity</h2>
                 <div className="text-gray-500">View activity</div>
