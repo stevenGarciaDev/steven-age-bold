@@ -1,11 +1,6 @@
 import { GoStar } from "react-icons/go";
-import { FaCheck, FaLaptopCode } from "react-icons/fa";
-import {
-    GiWeightLiftingUp,
-    GiWhiteBook,
-    GiGraduateCap,
-    GiTacos,
-} from "react-icons/gi";
+import { FaLaptopCode } from "react-icons/fa";
+import { GiWeightLiftingUp, GiWhiteBook, GiGraduateCap } from "react-icons/gi";
 import { MdOutlinePhoneIphone } from "react-icons/md";
 
 const ViewActivity = () => {
