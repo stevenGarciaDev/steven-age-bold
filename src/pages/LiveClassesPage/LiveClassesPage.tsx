@@ -17,7 +17,14 @@ const LiveClassesPage = () => {
                     Bold.
                 </p>
             </div>
-            <div></div>
+            <div className="mt-8 mx-auto flex flex-row justify-center">
+                <iframe
+                    className="w-full h-[500px]"
+                    src="https://www.youtube.com/embed/orqiGxnu7RU?si=QHSi_DwLxzi77y9C"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                ></iframe>
+            </div>
         </div>
     );
 };

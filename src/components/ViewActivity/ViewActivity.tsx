@@ -69,10 +69,6 @@ const ViewActivity = () => {
             icon: <GiGraduateCap />,
             content: <>CS Degree @ CSULB</>,
         },
-        {
-            icon: <GiTacos />,
-            content: <>Fun fact: Can eat 14 tacos in 1 sitting</>,
-        },
     ];
 
     return (
