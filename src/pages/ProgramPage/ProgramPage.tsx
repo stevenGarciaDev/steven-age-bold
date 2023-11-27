@@ -1,4 +1,3 @@
-import React from "react";
 import useScrollToTop from "../../hooks/useScrollToTop";
 import { PiChairBold } from "react-icons/pi";
 import { CiCoffeeCup } from "react-icons/ci";

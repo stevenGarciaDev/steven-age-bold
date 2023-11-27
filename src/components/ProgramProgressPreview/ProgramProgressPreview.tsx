@@ -1,5 +1,4 @@
-import React, { ReactNode } from "react";
-import { IoGridOutline } from "react-icons/io5";
+import { ReactNode } from "react";
 
 interface ProgramProgressPreviewProps {
     title: ReactNode;
